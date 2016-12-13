@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="toolbarPopupTheme" format="reference" />
+    <attr name="aboutScreenColor" format="reference" />
+    <attr name="windowBackgroundColor" format="reference" />
+    <attr name="cardBackgroundColor" format="reference" />
+    <attr name="headerBackgroundColor" format="reference" />
+    <attr name="highlightedBackgroundColor" format="reference" />
+    <attr name="iconAdd" format="reference" />
+    <attr name="cardBackground" format="reference"/>
+</resources>

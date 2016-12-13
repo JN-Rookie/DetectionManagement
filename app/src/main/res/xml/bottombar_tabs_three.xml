@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/tab_index"
+        icon="@drawable/ic_index"
+        title="我的应用" />
+    <!--<tab-->
+        <!--id="@+id/tab_work"-->
+        <!--icon="@drawable/ic_work"-->
+        <!--title="工作" />-->
+    <!--<tab-->
+        <!--id="@+id/tab_find"-->
+        <!--icon="@drawable/ic_find"-->
+        <!--title="发现" />-->
+    <tab
+        id="@+id/tab_me"
+        icon="@drawable/ic_me"
+        title="我" />
+    <!--<tab-->
+        <!--id="@+id/tab_food"-->
+        <!--icon="@drawable/ic_restaurants"-->
+        <!--title="Food" />-->
+</tabs>

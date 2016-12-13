@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="配置">
+        <EditTextPreference
+            android:defaultValue="http://192.168.88.100:8086"
+            android:dialogTitle="请输入服务器地址"
+            android:key="pref_servel_url"
+            android:summary="如需更改可咨询开发者进行配置"
+            android:title="设置服务器地址" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="linksCategory"
+        android:title="链接">
+
+        <Preference android:title="帮助">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://www.baidu.com/" />
+        </Preference>
+
+        <Preference android:title="向开发者发送邮件">
+            <intent
+                android:action="android.intent.action.SENDTO"
+                android:data="mailto:2401398074@qq.com" />
+        </Preference>
+        <!--<Preference android:title="关于">-->
+            <!--<intent-->
+                <!--android:action="android.intent.action.VIEW"-->
+                <!--android:targetClass="com.sjsm.supervise.AbountActivity"-->
+                <!--android:targetPackage="com.sjsm.supervise" />-->
+        <!--</Preference>-->
+
+        <Preference android:title="分享监督客户端"
+            android:key="pref_shared">
+        </Preference>
+    </PreferenceCategory>
+</PreferenceScreen>

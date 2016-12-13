@@ -1,0 +1,180 @@
+<resources>
+
+	<!-- Base application theme. -->
+	<style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+		<!-- Customize your theme here. -->
+		<item name="colorPrimary">@color/colorPrimary</item>
+		<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+		<item name="colorAccent">@color/colorAccent</item>
+	</style>
+
+	<!--定义浅色主题-->
+	<style name="AppBaseTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+		<item name="preferenceTheme">@style/PreferenceThemeOverlay.v14.Material</item>
+
+		<item name="android:dialogTheme">@style/Theme.AppCompat.Light.Dialog</item>
+		<item name="android:alertDialogTheme">@style/Theme.AppCompat.Light.Dialog</item>
+		<item name="windowActionModeOverlay">true</item>
+		<item name="actionModeBackground">@color/blue_grey_700</item>
+		<item name="actionBarPopupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+
+		<item name="cardBackground">@drawable/card_light_background</item>
+
+		<item name="colorPrimary">@color/colorPrimary</item>
+		<item name="colorPrimaryDark">@color/blue_grey_900</item>
+		<item name="colorAccent">?aboutScreenColor</item>
+
+		<item name="cardBackgroundColor">@color/grey_850</item>
+		<item name="windowBackgroundColor">@color/grey_200</item>
+		<item name="headerBackgroundColor">@color/grey_900</item>
+		<item name="highlightedBackgroundColor">@color/grey_800</item>
+
+		<item name="android:textColor">@color/grey_800</item>
+
+		<item name="toolbarPopupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+		<item name="aboutScreenColor">@color/blue_800</item>
+
+		<item name="iconAdd">@drawable/ic_action_add_dark</item>
+		<item name="android:listDivider">@drawable/md_divider</item>
+	</style>
+
+	<!--定义深色主题-->
+	<style name="AppBaseThemeDark" parent="@style/Theme.AppCompat.NoActionBar">
+		<item name="preferenceTheme">@style/PreferenceThemeOverlay.v14.Material</item>
+
+		<item name="android:dialogTheme">@style/Theme.AppCompat.Dialog</item>
+		<item name="android:alertDialogTheme">@style/Theme.AppCompat.Dialog</item>
+		<item name="windowActionModeOverlay">true</item>
+		<item name="actionModeBackground">@color/grey_800</item>
+
+		<item name="cardBackground">@drawable/card_dark_background</item>
+
+		<item name="colorPrimary">@color/grey_950</item>
+		<item name="colorPrimaryDark">@color/black</item>
+		<item name="colorAccent">?aboutScreenColor</item>
+
+		<item name="cardBackgroundColor">@color/grey_850</item>
+		<item name="windowBackgroundColor">@color/grey_200</item>
+		<item name="headerBackgroundColor">@color/grey_200</item>
+		<item name="highlightedBackgroundColor">@color/grey_100</item>
+
+		<item name="android:textColor">@color/grey_100</item>
+
+		<item name="toolbarPopupTheme">@style/ThemeOverlay.AppCompat</item>
+		<item name="aboutScreenColor">@color/blue_300</item>
+
+		<item name="iconAdd">@drawable/ic_action_add_dark</item>
+	</style>
+
+	<!--定义Toolbar-->
+	<style name="Toolbar">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">48dp</item>
+		<item name="android:background">@color/custom_blue</item>
+		<item name="android:theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+		<item name="android:layout_alignParentTop">true</item>
+		<item name="android:alpha">1</item>
+	</style>
+
+	<!--定义Toolbar Shadow-->
+	<style name="ToolbarShadow">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">1dp</item>
+		<item name="android:background">@drawable/toolbar_shadow</item>
+		<item name="android:alpha">0.5</item>
+		<item name="android:layout_below">@+id/toolbar</item>
+	</style>
+
+	<!--关于卡片Style-->
+	<style name="CardList">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:background">?windowBackgroundColor</item>
+		<item name="android:orientation">vertical</item>
+	</style>
+
+	<style name="CardCommon">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:orientation">vertical</item>
+		<item name="android:paddingTop">16dp</item>
+		<item name="android:paddingBottom">16dp</item>
+		<item name="android:paddingLeft">16dp</item>
+		<item name="android:paddingRight">4dp</item>
+		<item name="android:layout_marginBottom">3dp</item>
+		<item name="android:layout_marginLeft">3dp</item>
+		<item name="android:layout_marginRight">3dp</item>
+		<item name="android:background">?cardBackground</item>
+	</style>
+
+	<style name="Card" parent="CardCommon">
+		<item name="android:layout_marginBottom">1dp</item>
+	</style>
+
+	<style name="CardHeader">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginBottom">12dp</item>
+		<item name="android:textSize">@dimen/regularTextSize</item>
+	</style>
+
+	<style name="CardRow">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginBottom">4dp</item>
+		<item name="android:layout_marginTop">4dp</item>
+	</style>
+
+	<style name="CardLabel">
+		<item name="android:layout_width">120dp</item>
+		<item name="android:layout_height">wrap_content</item>
+	</style>
+
+	<style name="About" />
+
+	<style name="About.Item">
+		<item name="android:textSize">16sp</item>
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:paddingTop">6dp</item>
+		<item name="android:paddingBottom">6dp</item>
+	</style>
+
+	<style name="About.Item.Clickable">
+		<item name="android:paddingTop">12dp</item>
+		<item name="android:paddingBottom">12dp</item>
+	</style>
+
+	<style name="loading_dialog" parent="android:Theme.Dialog">
+		<item name="android:windowFrame">@null</item> <!-- Dialog的windowFrame框为无 -->
+		<item name="android:windowBackground">@color/transparent</item> <!-- 设置dialog的背景 -->
+		<item name="android:windowNoTitle">true</item> <!-- 是否显示title -->
+		<item name="android:windowIsTranslucent">true</item> <!-- 是否半透明 -->
+		<item name="android:windowIsFloating">true</item> <!-- 是否浮现在activity之上 -->
+		<item name="android:windowContentOverlay">@null</item> <!-- 也是个drawable，定义contentoverlay的背景 -->
+		<item name="android:backgroundDimEnabled">false</item> <!-- 背景是否模糊显示 -->
+	</style>
+
+	<style name="BottomBar">
+		<item name="android:textSize">12sp</item>
+	</style>
+
+
+
+	<style name="index_image">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_gravity">center</item>
+		<item name="android:padding">5dp</item>
+	</style>
+
+	<style name="index_text">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_gravity">center</item>
+		<item name="android:textColor">#484848</item>
+		<item name="android:textSize">14sp</item>
+	</style>
+
+
+</resources>
